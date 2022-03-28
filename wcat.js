@@ -54,13 +54,13 @@ if (isSPresent) {
   for (let i = 1; i < contentArr.length; i++) {
     if (contentArr[i] == "" && contentArr[i - 1] == "") {
       contentArr[i] = null;
-   } else if (contentArr[i] == "" && contentArr[i - 1] == null) {// skip the null in a list array
+  } else if (contentArr[i] == "" && contentArr[i - 1] == null) {// skip the null in a list array
       contentArr[i] = null;
     }
   }
   console.log("data after removing extra lines\n" + tempArr);
 }
- 
+
 console.table(contentArr);
 
 //   //==== < push everything in tempArr except null > =====
